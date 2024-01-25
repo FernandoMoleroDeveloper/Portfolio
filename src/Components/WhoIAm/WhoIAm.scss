@@ -2,7 +2,23 @@
 @import "../../styles/fonts.scss";
 
 .bio {
-  padding-top: 60px;
+  padding-top: 10px;
   height: 100vh;
   font-family: "Inter", sans-serif;
+  color: $font-color-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  &__slider {
+    padding-top: 20px;
+  }
 }

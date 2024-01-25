@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+@import "../../styles/fonts.scss";
+
+.title {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
+//background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #afadad 10px), repeating-linear-gradient(#ffdc0055, #ffdc00);
+
+.slide-in-top {
+  animation: slide-in-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-top-img {
+  animation: slide-in-top 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  height: 300px;
+}
+@keyframes slide-in-top-img {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
