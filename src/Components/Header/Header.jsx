@@ -10,8 +10,10 @@ const Header = () => {
   return (
     <>
     <nav className="header">
+    <Link className="header__name"  to="title" smooth={true} duration={500} spy={true}>FEɌNANƉØ MØLERØ</Link>
         <div className="header__lang">
           <button className="header__btn" onClick={() => idioma.establecerLenguaje("es-ES")}>ES</button>
+          <p>/</p>
           <button className="header__btn" onClick={() => idioma.establecerLenguaje("en-EN")}>EN</button>
         </div>
         <div className="header__links">

@@ -2,7 +2,96 @@
 @import "../../styles/fonts.scss";
 
 .proyects {
-  padding-top: 60px;
+  padding-top: 30px;
   height: 100vh;
   font-family: "Inter", sans-serif;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $font-color-light;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;
+    height: 250px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Inter", sans-serif;
+    align-items: center;
+    border: solid 1px $font-color-light;
+    justify-content: center;
+    box-sizing: border-box;
+
+    &:hover {
+      color: rgb(255, 255, 255, 0.4);
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__img {
+    width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__boxText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__titleText {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $font-color-light;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  &__text {
+    text-align: left;
+    padding-top: 10px;
+    color: $font-color-light;
+  }
+
+  &__boxLogos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__logos {
+    height: 50px;
+    margin: 0 10px;
+  }
+
+  &__technoText {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10px;
+  }
 }
